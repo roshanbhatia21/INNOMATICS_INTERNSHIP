@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/css/shortner.css">
+</head>
+
+
+{% extends 'layout.html' %}
+
+{% block title %}
+HOME
+{% endblock %}
+
+
+
+
+    {% block content %}
+
+        <body>
+            
+            <center>
+                    <h1>Shorten URL</h1>
+            <form method="POST" action="/short">
+                <input type='text' name='surl' value={{short}}><br>
+        <br><br>
+        <input type="Submit" value="COPY URL"  class="button"></input>
+            </form>
+        </center>
+        </body>
+
+    {% endblock %}
+
+
+
+
+</html>

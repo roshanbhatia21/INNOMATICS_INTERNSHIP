@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../static/css/index.css">
+</head>
+
+    {% extends 'layout.html' %}
+
+    {% block title %}
+    Home
+    {% endblock %}
+
+    {% block content %}
+
+    <body class="main">
+        <h1 style="margin-left: 42%;">URL Shortner</h1>
+        <br><br><br><br><br>
+        <center>
+            <form method='post' action="http://127.0.0.1:5000/">
+                <label for="url" style="font-family:'Courier New';font-size:30px">Enter an https://URL:</label>
+                <br><br><br><br>
+                <p>{{empty}}</p>
+                <input type='url' size = "50" name='in_1' placeholder='https://www.site.com' style="font-family:'Courier New';font-size:15px"><br>
+                <br>
+                <input type="Submit" value="URL Shortner"  class="button" size ="30" style="font-family:'Courier New';font: size 17px"></input>
+
+            </form>
+        </center>
+    </body>
+    {{ data }}
+    {% endblock %}
+    
+</html>

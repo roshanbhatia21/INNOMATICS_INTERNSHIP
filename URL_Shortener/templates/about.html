@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+            {% block title %}
+            About Us
+            {% endblock %}
+
+            {% block content %}
+            
+            <br><br><br><br>
+        <style>
+            .button {
+                background-color: #117685;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius:40px
+            }
+
+        </style>
+            
+            <h1 style="margin-left: 40%;"> About Us</h1>
+            <br><br>
+            <h3 style="margin-left: 15%;">
+                    
+                    <li style="list-style: None;">
+                    <h4>Basically, when the URL shortener gives you your shortened URL, it "remembers" the full address. <br>
+                        When other users go to the shortened URL, they will be automatically redirected to the full address. <br>
+                        The webpage will still exist at the longer URL—the shortened URL is simply a shortcut <br> to make the link easier 
+                        to manage.</h4>
+                    </li>
+                    <br><br><br><br><br>
+                    <li>Tools Used : <i>Python , Flask Framework, SQLAlchemy , HTML, CSS</i></li>
+                    <br><br><br>
+                    <li style="list-style: None;">Future Updates : </li>
+                    <br>
+                    <li>In future, I will add the login/signup page </li>
+                    <br><br><br>
+                    <li>Also, add the <i><span class="button">Delete</span> and <span class="button">Copy</span></i> button in the <b>History </b> page</li>
+
+            </h3>
+            {% endblock %}
